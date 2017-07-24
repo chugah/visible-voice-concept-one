@@ -1,0 +1,275 @@
+/* Header Image VV Logo */
+
+.logo {
+  margin: 75px 0px 0px 50px;
+}
+
+.heading {
+  margin-top: -40px;
+}
+
+/* Header Image Spinning Lines */
+
+.holder {
+  margin-top: -70px;
+  margin-left: 65px;
+  width: 130px;
+  height: 0px;
+  position: relative;
+}
+.holder .circle {
+  border-radius: 100% 100% 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+.holder .circle:nth-child(1) {
+  border-bottom: none;
+  border-radius: 25px 25px 0 0;
+  width: 25px;
+  height: 12.5px;
+  z-index: 15;
+  -webkit-animation: circle-1 10s infinite ease-in-out;
+          animation: circle-1 10s infinite ease-in-out;
+}
+@-webkit-keyframes circle-1 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-360deg);
+            transform: translateX(-50%) rotate(-360deg);
+  }
+}
+@keyframes circle-1 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-360deg);
+            transform: translateX(-50%) rotate(-360deg);
+  }
+}
+.holder .circle:nth-child(2) {
+  border: 2.5px solid #404040;
+  border-bottom: none;
+  border-radius: 40px 40px 0 0;
+  width: 40px;
+  height: 20px;
+  z-index: 14;
+  -webkit-animation: circle-2 10s infinite ease-in-out;
+          animation: circle-2 10s infinite ease-in-out;
+}
+@-webkit-keyframes circle-2 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-720deg);
+            transform: translateX(-50%) rotate(-720deg);
+  }
+}
+@keyframes circle-2 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-720deg);
+            transform: translateX(-50%) rotate(-720deg);
+  }
+}
+.holder .circle:nth-child(3) {
+  border: 2.5px solid #404040;
+  border-bottom: none;
+  border-radius: 62px 62px 0 0;
+  width: 62px;
+  height: 31px;
+  z-index: 13;
+  -webkit-animation: circle-3 10s infinite ease-in-out;
+          animation: circle-3 10s infinite ease-in-out;
+}
+@-webkit-keyframes circle-3 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-1080deg);
+            transform: translateX(-50%) rotate(-1080deg);
+  }
+}
+@keyframes circle-3 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-1080deg);
+            transform: translateX(-50%) rotate(-1080deg);
+  }
+}
+.holder .circle:nth-child(4) {
+  border: 2.5px solid #404040;
+  border-bottom: none;
+  border-radius: 93px 93px 0 0;
+  width: 93px;
+  height: 46.5px;
+  z-index: 12;
+  -webkit-animation: circle-4 10s infinite ease-in-out;
+          animation: circle-4 10s infinite ease-in-out;
+}
+@-webkit-keyframes circle-4 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-1440deg);
+            transform: translateX(-50%) rotate(-1440deg);
+  }
+}
+@keyframes circle-4 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-1440deg);
+            transform: translateX(-50%) rotate(-1440deg);
+  }
+}
+.holder .circle:nth-child(5) {
+  border: 2.5px solid #404040;
+  border-bottom: none;
+  border-radius: 124px 124px 0 0;
+  width: 124px;
+  height: 62px;
+  z-index: 11;
+  -webkit-animation: circle-5 10s infinite ease-in-out;
+          animation: circle-5 10s infinite ease-in-out;
+}
+@-webkit-keyframes circle-5 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-1800deg);
+            transform: translateX(-50%) rotate(-1800deg);
+  }
+}
+@keyframes circle-5 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-1800deg);
+            transform: translateX(-50%) rotate(-1800deg);
+  }
+}
+.holder .circle:nth-child(6) {
+  border: 2.5px solid #404040;
+  border-bottom: none;
+  border-radius: 155px 155px 0 0;
+  width: 155px;
+  height: 77.5px;
+  z-index: 10;
+  -webkit-animation: circle-6 10s infinite ease-in-out;
+          animation: circle-6 10s infinite ease-in-out;
+}
+@-webkit-keyframes circle-6 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-2160deg);
+            transform: translateX(-50%) rotate(-2160deg);
+  }
+}
+@keyframes circle-6 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-2160deg);
+            transform: translateX(-50%) rotate(-2160deg);
+  }
+}
+.holder .circle:nth-child(7) {
+  border: 2.5px solid #404040;
+  border-bottom: none;
+  border-radius: 186px 186px 0 0;
+  width: 186px;
+  height: 93px;
+  z-index: 9;
+  -webkit-animation: circle-7 10s infinite ease-in-out;
+          animation: circle-7 10s infinite ease-in-out;
+}
+@-webkit-keyframes circle-7 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-2520deg);
+            transform: translateX(-50%) rotate(-2520deg);
+  }
+}
+@keyframes circle-7 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(-2520deg);
+            transform: translateX(-50%) rotate(-2520deg);
+  }
+}
+
+/* Header Visible Voice Logo Text */
+
+#letters {
+  text-align: center;
+  font-family: "Courier";
+  font-size: 120px;
+  margin-top: -90px;
+}
+
+/* Navigation Menu */
+
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+#example-menu {
+  font-family: "Courier";
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+/* Modals */
+
+#modal-btn {
+  margin-top: 20px;
+}

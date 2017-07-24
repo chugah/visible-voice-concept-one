@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>VV - Concept 1</title>
+   
+    <link rel="Shortcut Icon" type="image/jpg"/ href="./images/favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css" />
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js"></script>
+  
+  </head>
+
+  <body>
+    <div class="grid-x grid-padding-x">
+      <div class="cell large-12 heading">
+        <div class="logo"> <img src="./images/vv-logo-bl.jpg" /></div>
+        <div class="holder">          
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+     <div class="grid-x grid-padding-x">
+      <div class="cell large-12 heading">
+        <div id="letters"></div>
+      </div>
+    </div>
+    <script>
+      var text = 'VISIBLE VOICE';
+
+      var textElements = text.split("").map(function(c) {
+      return $('<span id="' + c + '">' + c + '</span>');
+      });
+
+      var el = $('#letters');
+      var delay = 200; 
+      
+      textElements.forEach(function(e, i) {
+      el.append(e);
+      e.hide();
+      
+      setTimeout(function() {
+        e.fadeIn(5000)
+      }, 100 + i * delay)
+      })
+    </script>
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="grid-x grid-padding-x align-center-middle text-center" id="example-menu">
+      <div class="cell small-6">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <!--<li class="menu-text">Site Title</li>-->
+          <li class="has-submenu">
+            <a href="#">live recordings</a>
+            <!-- <ul class="menu vertical">
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul> -->
+          </li>
+          <li><a href="#">kitchen sessions</a></li>
+          <li><a href="#">videos</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+      <!-- <div class="top-bar">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="grid-x grid-padding-x align-center-middle text-center" id="modal-btn">
+    <p><button class="button" data-open="exampleModal2">Click me for a modal</button></p>
+    </div>
+    <!-- This is the first modal -->
+    <div class="full reveal" id="exampleModal2" data-reveal>
+      <h1>Awesome!</h1>
+      <p class="lead">I have another modal inside of me!</p>
+      <button class="button" data-open="exampleModal3">Click me for another modal!</button>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <!-- This is the nested modal -->
+    <div class="full reveal" id="exampleModal3" data-reveal>
+      <h2>ANOTHER MODAL!!!</h2>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.responsiveMenu.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.util.triggers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.util.mediaQuery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.responsiveToggle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.reveal.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(document).foundation();
+      });
+    </script>
+  </body>
+</html>
