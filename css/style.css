@@ -1,20 +1,20 @@
+
 /* Header Image VV Logo */
 
 .logo {
-  margin: 75px 0px 0px 50px;
+  margin: 4.69rem 0rem 0rem 3.125rem;
 }
 
 .heading {
-  margin-top: -40px;
+  margin-top: -2.5rem;
 }
 
 /* Header Image Spinning Lines */
 
 .holder {
-  margin-top: -70px;
-  margin-left: 65px;
-  width: 130px;
-  height: 0px;
+  margin-top: -4.38rem;
+  margin-left: 4.06rem;
+  width: 8.125rem;
   position: relative;
 }
 .holder .circle {
@@ -242,8 +242,8 @@
 #letters {
   text-align: center;
   font-family: "Courier";
-  font-size: 120px;
-  margin-top: -90px;
+  font-size: 8rem;
+  margin-top: -5.62rem;
 }
 
 /* Navigation Menu */
@@ -264,12 +264,32 @@
 
 #example-menu {
   font-family: "Courier";
-  font-size: 20px;
-  margin-top: -20px;
+  font-size: 1.2rem;
+  margin-top: -1.25rem;
 }
 
 /* Modals */
 
 #modal-btn {
-  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+/* cards to display bands */
+
+.artist {
+  color: red;
+  font-weight: bold;
+}
+
+a:hover, .button:hover {
+  background: red !important;
+  color: yellow !important;
+}
+
+.card-divider {
+  background: none !important;
+}
+
+.time {
+  font-size: 0.5rem;
 }
