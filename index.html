@@ -97,13 +97,16 @@
       </div>
     </div> -->
     <div class="grid-x grid-padding-x align-center-middle text-center" id="modal-btn">
-    <p><button class="button" data-open="exampleModal2">Click me for a modal</button></p>
+    <p><button class="button" data-open="exampleModal2">Murder By Death</button></p>
     </div>
     <!-- This is the first modal -->
     <div class="full reveal" id="exampleModal2" data-reveal>
-      <h1>Awesome!</h1>
-      <p class="lead">I have another modal inside of me!</p>
-      <button class="button" data-open="exampleModal3">Click me for another modal!</button>
+      <h1>Murder By Death</h1>
+      <img src="./images/murder-by-death.jpg" alt="murder by death" />
+      <p class="lead">I am not going to lie, I've listened to Murder By Death for many years and now I am meeting up with them right before they go on stage at The Showbox in Seattle. So needless to say, I was pretty excited. Adam (lead singer) was kind enough to perform a solo session for us in the green room.<br/>
+
+      You never really know what your going to get when you try to do a video production behind a stage. The one thing you dont want is for the opening band to start their sound check in the middle of recording. Unfortunately it happened... but like a pro Adam kept it going. We tried to dumb down the background noise as much as possible. Please enjoy!</p>
+      <button class="button" data-open="exampleModal3">More stuff...</button>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -111,11 +114,47 @@
 
     <!-- This is the nested modal -->
     <div class="full reveal" id="exampleModal3" data-reveal>
-      <h2>ANOTHER MODAL!!!</h2>
+      <script>
+
+        // This is the URL of the video you want to load
+        var videoUrl = 'https://vimeo.com/225190115';
+
+        // This is the oEmbed endpoint for Vimeo (we're using JSON)
+        // (Vimeo also supports oEmbed discovery. See the PHP example.)
+        var endpoint = 'http://www.vimeo.com/api/oembed.json';
+
+        // Tell Vimeo what function to call
+        var callback = 'embedVideo';
+
+        // Put together the URL
+        var url = endpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + callback + '&width=698';
+
+        // This function puts the video on the page
+        function embedVideo(video) {
+            document.getElementById('embed').innerHTML = unescape(video.html);
+        }
+
+        // This function loads the data from Vimeo
+        function init() {
+            var js = document.createElement('script');
+            js.setAttribute('type', 'text/javascript');
+            js.setAttribute('src', url);
+            document.getElementsByTagName('head').item(0).appendChild(js);
+        }
+
+        // Call our init function when the page loads
+        window.onload = init;
+
+    </script>
+    <h1>Murder By Death</h1>
+    <div id="embed">Loading video...</div>
+      <p><img src="./images/murder-by-death-combo.jpg" alt="murder by death" /></p>
+      <p><a href="http://www.murderbydeath.com/" target="_blank">Band Site for Album Purchase and Tour Dates</a></p>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.responsiveMenu.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.core.min.js"></script>
