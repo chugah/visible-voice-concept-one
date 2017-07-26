@@ -293,3 +293,87 @@ a:hover, .button:hover {
 .time {
   font-size: 0.5rem;
 }
+
+/*  Drums */
+
+.st0 {
+  /*fill:#FCF99A;*/
+  fill: #C0C0C0;
+  stroke:#000000;
+  stroke-width:6;
+  stroke-miterlimit:10;
+}
+
+.st1 {
+  display:none;
+  fill:none;
+}
+
+.st2 {
+  /*fill:#9BF9F4;*/
+  fill: #FFFFFF;
+  stroke:#000000;
+  stroke-width:2;
+  stroke-miterlimit:10;
+}
+
+.st3 {
+ /* fill:#FCF99A;*/
+  fill: #000000;
+  stroke:#000000;
+  stroke-width:8;
+  stroke-miterlimit:10;
+}
+
+.st4 {
+  /*fill:#230B89;*/
+  fill: #FF4500;
+  stroke:#000000;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
+
+.st5 {
+  fill:#C0C0C0;
+  stroke:#000000;
+  stroke-width:2;
+  stroke-miterlimit:10;
+}
+
+.st6 {
+  fill:#4D4D4D;
+  stroke:#000000;
+  stroke-width:2;
+  stroke-miterlimit:10;
+}
+
+.st7 {
+  /*fill:#FF17E9;*/
+  fill: #CFB53B;
+  stroke:#000000;
+  stroke-width:2;
+  stroke-miterlimit:10;
+}
+
+.st8 {
+  /*fill:#9BF9F4;*/
+  fill: #FFFFFF;  
+  stroke:#000000;
+  stroke-width:4;
+  stroke-miterlimit:10;
+}
+
+.st9 {
+  fill:#FFFFFF;
+  stroke:#000000;
+  stroke-width:4;
+  stroke-miterlimit:10;
+}
+
+.st10 {
+  fill:none;
+}
+
+.st11 {
+  fill:#666666;
+}
