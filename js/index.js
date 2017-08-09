@@ -1,6 +1,7 @@
+
+/* JS for DRUMS  */
+
 $(function() {
-
-
     //SNARE
     var snareAudio = $('#snare-audio');
     var $snareHead = $('#snare-drum-head');
