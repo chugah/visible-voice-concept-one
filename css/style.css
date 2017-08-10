@@ -1,29 +1,18 @@
 /* Global Styles */
 
-body {
+body, h1, h2, h3, h4 {
   font-family: "Courier" !important;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Courier" !important;
-}
-/* Header Image VV Logo */
-
-.heading {
-  margin-top: -2.5rem;
-}
-
-.logo {
-  margin: 4rem 0rem 3rem 18rem;
-  width: 100%;
-  height: 100%;
+.main {
+  font-size: 1.2rem;
 }
 
 /* Header Image Spinning Lines */
 
 .holder {
-  margin-top: -7.5rem;
-  margin-left: 19rem;
+  margin-top: -4.5rem;
+  margin-left: 1.5rem;
   width: 8.125rem;
   position: relative;
 }
@@ -251,9 +240,9 @@ h1, h2, h3, h4 {
 
 #letters {
   text-align: left;
-  font-size: 5rem;
-  margin-top: 7rem;
-  opacity: 0.6;
+  font-size: 6rem;
+  margin-top: 5.5rem;
+  opacity: 0.7;
 }
 
 /* Navigation Menu */
@@ -286,6 +275,26 @@ div.title-bar {
   margin-left: 16rem;
 }
 
+/* Nav Menu Hover to Show Destination */
+
+
+.img__description {
+  position: absolute;
+  color: #2A8FBD;
+  visibility: hidden;
+  opacity: 0;
+  margin-left: -5rem;
+  margin-top: 3rem;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Modals */
 
 #modal-btn {
@@ -307,7 +316,7 @@ div.card-divider {
   font-size: 0.5rem;
 }
 
-/* Buttons  */
+/* Read More Buttons  */
 
 .btn-glass {
   -webkit-box-flex: 1;
@@ -319,6 +328,7 @@ div.card-divider {
   text-decoration: none;
   padding: 0.1rem 0.2em;
   border: 0.07rem dotted transparent;
+  border-radius: 5rem;
   letter-spacing: 0.98pt;
   text-transform: lowercase;
   -webkit-transition: background-position 2s cubic-bezier(0, 1, 0, 1), border-color 500ms, background-color 500ms;
@@ -367,6 +377,7 @@ div.card-divider {
 .nav-dark .btn-glass.btn-primary:hover {
   border-color: #1c607e;
   background-color: #2A8FBD;
+  border-radius: 5rem;
 }
 
 .nav-dark .btn-glass.btn-primary:active {
@@ -384,8 +395,10 @@ div.btn-bar {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 0.5rem;
-  width: 14rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: 20%;
+  border-radius: 5rem;
 }
 
 
