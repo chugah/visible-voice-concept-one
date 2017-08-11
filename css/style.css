@@ -28,9 +28,9 @@ body, h1, h2, h3, h4 {
 }
 .holder .circle:nth-child(1) {
   border-bottom: none;
-  border-radius: 25px 25px 0 0;
-  width: 25px;
-  height: 12.5px;
+  border-radius: 1.6rem 1.6rem 0 0;
+  width: 1.6rem;
+  height: 0.8rem;
   z-index: 15;
   -webkit-animation: circle-1 10s infinite ease-in-out;
           animation: circle-1 10s infinite ease-in-out;
@@ -56,11 +56,11 @@ body, h1, h2, h3, h4 {
   }
 }
 .holder .circle:nth-child(2) {
-  border: 2.5px solid #404040;
+  border: 0.16rem solid #DC143C;
   border-bottom: none;
-  border-radius: 40px 40px 0 0;
-  width: 40px;
-  height: 20px;
+  border-radius: 2.5rem 2.5rem 0 0;
+  width: 2.5rem;
+  height: 1.25rem;
   z-index: 14;
   -webkit-animation: circle-2 10s infinite ease-in-out;
           animation: circle-2 10s infinite ease-in-out;
@@ -86,11 +86,11 @@ body, h1, h2, h3, h4 {
   }
 }
 .holder .circle:nth-child(3) {
-  border: 2.5px solid #404040;
+  border: 0.16rem solid #FF00FF;
   border-bottom: none;
-  border-radius: 62px 62px 0 0;
-  width: 62px;
-  height: 31px;
+  border-radius: 4rem 4rem 0 0;
+  width: 4rem;
+  height: 2rem;
   z-index: 13;
   -webkit-animation: circle-3 10s infinite ease-in-out;
           animation: circle-3 10s infinite ease-in-out;
@@ -116,11 +116,11 @@ body, h1, h2, h3, h4 {
   }
 }
 .holder .circle:nth-child(4) {
-  border: 2.5px solid #404040;
+  border: 0.16rem solid #00BFFF;
   border-bottom: none;
-  border-radius: 93px 93px 0 0;
-  width: 93px;
-  height: 46.5px;
+  border-radius: 5.8rem 5.8rem 0 0;
+  width: 5.8rem;
+  height: 2.9rem;
   z-index: 12;
   -webkit-animation: circle-4 10s infinite ease-in-out;
           animation: circle-4 10s infinite ease-in-out;
@@ -146,11 +146,11 @@ body, h1, h2, h3, h4 {
   }
 }
 .holder .circle:nth-child(5) {
-  border: 2.5px solid #404040;
+  border: 0.16rem solid #32CD32;
   border-bottom: none;
-  border-radius: 124px 124px 0 0;
-  width: 124px;
-  height: 62px;
+  border-radius: 7.8rem 7.8rem 0 0;
+  width: 7.8rem;
+  height: 3.9rem;
   z-index: 11;
   -webkit-animation: circle-5 10s infinite ease-in-out;
           animation: circle-5 10s infinite ease-in-out;
@@ -176,11 +176,11 @@ body, h1, h2, h3, h4 {
   }
 }
 .holder .circle:nth-child(6) {
-  border: 2.5px solid #404040;
+  border: 0.16rem solid #CCCC00;
   border-bottom: none;
-  border-radius: 155px 155px 0 0;
-  width: 155px;
-  height: 77.5px;
+  border-radius: 9.8rem 9.8rem 0 0;
+  width: 9.8rem;
+  height: 4.9rem;
   z-index: 10;
   -webkit-animation: circle-6 10s infinite ease-in-out;
           animation: circle-6 10s infinite ease-in-out;
@@ -206,11 +206,11 @@ body, h1, h2, h3, h4 {
   }
 }
 .holder .circle:nth-child(7) {
-  border: 2.5px solid #404040;
+  border: 0.16rem solid #DC143C;
   border-bottom: none;
-  border-radius: 186px 186px 0 0;
-  width: 186px;
-  height: 93px;
+  border-radius: 12rem 12rem 0 0;
+  width: 12rem;
+  height: 6rem;
   z-index: 9;
   -webkit-animation: circle-7 10s infinite ease-in-out;
           animation: circle-7 10s infinite ease-in-out;
