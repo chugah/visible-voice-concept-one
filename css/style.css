@@ -4,12 +4,15 @@ body, h1, h2, h3, h4 {
   font-family: "Courier" !important;
 }
 
-.main {
-  font-size: 1.2rem;
+.description {
+  border: 0.06rem solid #464646;
+  font-size: 1.2rem; 
+  padding: 2.5rem;
+  text-align: justify; 
 }
 
-.orbit {
-  margin: 0 auto;
+.main {
+  font-size: 1.2rem;
 }
 
 /* Header Image Spinning Lines */
@@ -301,6 +304,16 @@ div.title-bar {
 
 /* Modals */
 
+.orbit {
+  border: 0.1rem solid #FFFFF;
+  margin: 0 auto;
+  padding: 2rem 1.6rem 0rem 1.3rem;
+}
+
+#embed {
+  margin-left: 3rem;
+}
+
 #modal-btn {
   margin-top: 1.25rem;
 }
@@ -405,6 +418,55 @@ div.btn-bar {
   border-radius: 5rem;
 }
 
+/* Visible Voice Banner on Modal  */
+
+#vv-banner {
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+  padding-right: 2rem;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; 
+  -webkit-animation: fadein 4s; 
+  -o-animation: fadein 4s; 
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Carousel navigation  */
+
+.orbit-next {
+  background: transparent;
+}
 
 /*  Drums */
 
@@ -493,8 +555,6 @@ div.btn-bar {
 td {
   border: none !important;
 }
-
-
 
 
 
