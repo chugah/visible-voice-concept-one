@@ -11,6 +11,7 @@
     <link rel="Shortcut Icon" type="image/jpg"/ href="./images/favicon.jpg">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js"></script>
@@ -71,23 +72,23 @@
       <div class="cell medium-6 nav-menu">
         <ul class="dropdown menu align-center" data-dropdown-menu>
           <li class="img__wrap">
-            <a href="http://www.visiblevoice.net/"><img src="./images/nav-home.jpg" alt="home"/></a>
+            <a href="http://www.visiblevoice.net/"><img src="./images/nav/nav-home.jpg" alt="home"/></a>
             <p class="img__description">home</p>
           </li>
           <li class="img__wrap">
-            <a href="#"><img src="./images/nav-about-us.jpg" alt="about-us"/></a>
+            <a href="#"><img src="./images/nav/nav-about-us.jpg" alt="about-us"/></a>
             <p class="img__description">about us</p>
           </li>
           <li class="img__wrap">
-            <a href="#"><img src="./images/nav-kitch-sessns.jpg" alt="kitchen-sessions"/></a>
+            <a href="#"><img src="./images/nav/nav-kitch-sessns.jpg" alt="kitchen-sessions"/></a>
             <p class="img__description">kitchen sessions</p>
           </li>
           <li class="img__wrap">
-            <a href="#"><img src="./images/nav-videos.jpg" alt="videos"/></a>
+            <a href="#"><img src="./images/nav/nav-videos.jpg" alt="videos"/></a>
             <p class="img__description">videos</p>
           </li>
           <li class="img__wrap">
-            <a href="#"><img src="./images/nav-contact.jpg" alt="contact"/></a>
+            <a href="#"><img src="./images/nav/nav-contact.jpg" alt="contact"/></a>
             <p class="img__description">contact</p>
           </li>
         </ul>
@@ -97,14 +98,14 @@
     <div class="grid-x grid-padding-x align-center-middle">
       <div class="cell small-6" style="width: 400px; height: 250px;">
         <div class="card-divider">
-          <img src="./images/murder-by-death-three-lge.jpg" />
+          <img src="./images/murder-by-death/murder-by-death-three-lge.jpg" />
         </div>
       </div>
       <div class="cell medium-6"> 
         <div class="card-section">
           <h2>Murder by Death - Video Session</h2>
           <p class="time">Wednesday July 12, 2017</p>
-          <p class="main">I am not going to lie, I've listened to <span class="artist">Murder By Death</span> for many years and now I am meeting up with them right before they go on stage at The Showbox in Seattle.</p>
+          <p class="main">I am not going to lie, I've listened to <span class="artist">Murder By Death</span> for many years and now I am meeting up with them right before they go on stage at The Showbox in Seattle. So needless to say, I was pretty excited.</p>
           <div class="btn-bar nav-dark">           
             <a href="#" class="btn btn-glass btn-primary" data-open="exampleModal2">
               Read More >>
@@ -115,52 +116,94 @@
     </div>
     <!-- This is the first modal -->
     <div class="full reveal" id="exampleModal2" data-reveal>
-      <h1>Murder By Death</h1>
-      <img src="./images/murder-by-death.jpg" alt="murder by death" />
-      <p class="lead">So needless to say, I was pretty excited. Adam (lead singer) was kind enough to perform a solo session for us in the green room. You never really know what your going to get when you try to do a video production behind a stage. The one thing you dont want is for the opening band to start their sound check in the middle of recording. Unfortunately it happened... but like a pro Adam kept it going. We tried to dumb down the background noise as much as possible. Please enjoy!</p>
-      <button class="button" data-open="exampleModal3">More stuff...</button>
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="cell large-12">
+          <img src="./images/visible-voice-sm.jpg" style="width:100%; padding-right:1rem;" />
+        </div>
+      </div>
+      <hr />
+      <div class="grid-x">
+          <script>
+              var videoUrl = 'https://vimeo.com/225190115';
+              var endpoint = 'http://www.vimeo.com/api/oembed.json';
+              var callback = 'embedVideo';
+              var url = endpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + callback + '&width=600';
+              
+              function embedVideo(video) {
+                  document.getElementById('embed').innerHTML = unescape(video.html);
+              }
+
+              function init() {
+                  var js = document.createElement('script');
+                  js.setAttribute('type', 'text/javascript');
+                  js.setAttribute('src', url);
+                  document.getElementsByTagName('head').item(0).appendChild(js);
+              }
+              window.onload = init;
+          </script>
+        <div class="small-6 cell">
+          <div class="card-section">
+            <p style="text-align:justify; font-size:1.2rem; padding:2rem;">Adam (lead singer) was kind enough to perform a solo session for us in the green room. You never really know what your going to get when you try to do a video production behind a stage. The one thing you dont want is for the opening band to start their sound check in the middle of recording. Unfortunately it happened... but like a pro Adam kept it going. We tried to dumb down the background noise as much as possible. Please enjoy!</p>
+          </div>
+        </div>
+        <div class="medium-6 cell">
+          <div class="card-section" style="width: 38rem;" id="embed">Loading video...
+          </div>
+        </div>        
+      </div>
+      <hr />
+     <!--  <button class="button" data-open="exampleModal3">Band pictures...</button>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
-      </button>
+      </button> -->
+        <div class="grid-x">
+            <div class="orbit small-10 cell" role="region" aria-label="Favorite Space Pictures" data-orbit>
+              <div class="orbit-wrapper">
+                <div class="orbit-controls">
+                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                </div>
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="http://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+                      <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="http://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                      <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="http://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                      <figcaption class="orbit-caption">Encapsulating</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="http://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                      <figcaption class="orbit-caption">Outta This World</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+        </div>
     </div>
 
     <!-- This is the nested modal -->
     <div class="full reveal" id="exampleModal3" data-reveal>
-      <script>
-
-        // This is the URL of the video you want to load
-        var videoUrl = 'https://vimeo.com/225190115';
-
-        // This is the oEmbed endpoint for Vimeo (we're using JSON)
-        // (Vimeo also supports oEmbed discovery. See the PHP example.)
-        var endpoint = 'http://www.vimeo.com/api/oembed.json';
-
-        // Tell Vimeo what function to call
-        var callback = 'embedVideo';
-
-        // Put together the URL
-        var url = endpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + callback + '&width=698';
-
-        // This function puts the video on the page
-        function embedVideo(video) {
-            document.getElementById('embed').innerHTML = unescape(video.html);
-        }
-
-        // This function loads the data from Vimeo
-        function init() {
-            var js = document.createElement('script');
-            js.setAttribute('type', 'text/javascript');
-            js.setAttribute('src', url);
-            document.getElementsByTagName('head').item(0).appendChild(js);
-        }
-
-        // Call our init function when the page loads
-        window.onload = init;
-    </script>
-
     <h1>Murder By Death</h1>
-    <div id="embed">Loading video...</div>
-      <p><img src="./images/murder-by-death-combo.jpg" alt="murder by death" /></p>
+      <p><img src="./images/murder-by-death/murder-by-death-combo.jpg" alt="murder by death" /></p>
       <p><a href="http://www.murderbydeath.com/" target="_blank">Band Site for Album Purchase and Tour Dates</a></p>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -172,7 +215,7 @@
       <div class="cell small-6" style="width: 400px;">
         <div class="card-divider">
           <!-- <p><button class="button" data-open="exampleModal2">Murder By Death</button></p> -->
-          <img src="./images/low-roar-one.jpg" alt="low roar" />
+          <img src="./images/low-roar/low-roar-one.jpg" alt="low roar" />
         </div>
       </div>
       <div class="cell small-6"> 
@@ -191,7 +234,7 @@
     <!-- This is the first modal -->
     <div class="full reveal" id="exampleModal4" data-reveal>
       <h1>Low Roar</h1>
-      <img src="./images/low-roar-two.jpg" alt="low roar group" />
+      <img src="./images/low-roar/low-roar-two.jpg" alt="low roar group" />
       <p class="lead">So needless to say, I was pretty excited. Adam (lead singer) was kind enough to perform a solo session for us in the green room. You never really know what your going to get when you try to do a video production behind a stage. The one thing you dont want is for the opening band to start their sound check in the middle of recording. Unfortunately it happened... but like a pro Adam kept it going. We tried to dumb down the background noise as much as possible.</p>
       <button class="button" data-open="exampleModal5">Please enjoy!</button>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
@@ -539,10 +582,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.util.box.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/plugins/foundation.util.imageLoader.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.util.keyboard.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.util.mediaQuery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/plugins/foundation.util.motion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/plugins/foundation.util.timer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/plugins/foundation.util.touch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.util.triggers.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.dropdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/plugins/foundation.orbit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.responsiveMenu.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.responsiveToggle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.reveal.min.js"></script>
