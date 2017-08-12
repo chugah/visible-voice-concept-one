@@ -5,10 +5,16 @@ body, h1, h2, h3, h4 {
 }
 
 .description {
-  border: 0.06rem solid #464646;
+  border-top: 0.06rem solid #464646;
+  border-bottom:0.06rem solid #464646;
   font-size: 1.2rem; 
-  padding: 2.5rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
   text-align: justify; 
+}
+
+.horiz-line {
+  border-top: 0.1rem solid #D2B48C;
+  margin: 1rem 0 1rem 0;
 }
 
 .main {
@@ -284,8 +290,7 @@ div.title-bar {
 
 /* Nav Menu Hover to Show Destination */
 
-
-.img__description {
+.img-description {
   position: absolute;
   color: #2A8FBD;
   visibility: hidden;
@@ -297,7 +302,7 @@ div.title-bar {
   transition: opacity .2s, visibility .2s;
 }
 
-.img__wrap:hover .img__description {
+.img-wrap:hover .img-description {
   visibility: visible;
   opacity: 1;
 }
@@ -420,7 +425,12 @@ div.btn-bar {
 
 /* Visible Voice Banner on Modal  */
 
-#vv-banner {
+#adam {
+    border-top: 0.06rem solid #464646;
+    padding-top: 1rem;
+}
+
+.description, #adam, #modal-murder, #vv-banner  {
   margin: 1rem 0 1rem 0;
   width: 100%;
   padding-right: 2rem;
@@ -429,6 +439,7 @@ div.btn-bar {
   -webkit-animation: fadein 4s; 
   -o-animation: fadein 4s; 
 }
+
 @keyframes fadein {
   from {
       opacity:0;

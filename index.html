@@ -72,31 +72,30 @@
     <div class="grid-x grid-padding-x align-center-middle text-center" id="example-menu">
       <div class="cell medium-6 nav-menu">
         <ul class="dropdown menu align-center" data-dropdown-menu>
-          <li class="img__wrap">
+          <li class="img-wrap">
             <a href="http://www.visiblevoice.net/"><img src="./images/nav/nav-home.jpg" alt="home"/></a>
-            <p class="img__description">home</p>
+            <p class="img-description">home</p>
           </li>
-          <li class="img__wrap">
+          <li class="img-wrap">
             <a href="#"><img src="./images/nav/nav-about-us.jpg" alt="about-us"/></a>
-            <p class="img__description">about us</p>
+            <p class="img-description">about us</p>
           </li>
-          <li class="img__wrap">
+          <li class="img-wrap">
             <a href="#"><img src="./images/nav/nav-kitch-sessns.jpg" alt="kitchen-sessions"/></a>
-            <p class="img__description">kitchen sessions</p>
+            <p class="img-description">kitchen sessions</p>
           </li>
-          <li class="img__wrap">
+          <li class="img-wrap">
             <a href="#"><img src="./images/nav/nav-videos.jpg" alt="videos"/></a>
-            <p class="img__description">videos</p>
+            <p class="img-description">videos</p>
           </li>
-          <li class="img__wrap">
+          <li class="img-wrap">
             <a href="#"><img src="./images/nav/nav-contact.jpg" alt="contact"/></a>
-            <p class="img__description">contact</p>
+            <p class="img-description">contact</p>
           </li>
         </ul>
       </div>
     </div>
-    <hr />
-    <div class="grid-x align-center-middle">
+    <div class="grid-x align-center-middle horiz-line">
       <div class="cell small-6" style="width: 400px; height: 250px;">
         <div class="card-divider">
           <img src="./images/murder-by-death/murder-by-death-three-lge.jpg" />
@@ -121,42 +120,25 @@
         <div class="cell large-12">
           <img id="vv-banner" src="./images/visible-voice-sm.jpg" />
         </div>
+        <h2 id="modal-murder">Murder by Death - Video Session</h2>
       </div>
-      <div class="grid-x">
-          <script>
-              var videoUrl = 'https://vimeo.com/225190115';
-              var endpoint = 'http://www.vimeo.com/api/oembed.json';
-              var callback = 'embedVideo';
-              var url = endpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + callback + '&width=700' + '&height=320';
-              
-              function embedVideo(video) {
-                  document.getElementById('embed').innerHTML = unescape(video.html);
-              }
-
-              function init() {
-                  var js = document.createElement('script');
-                  js.setAttribute('type', 'text/javascript');
-                  js.setAttribute('src', url);
-                  document.getElementsByTagName('head').item(0).appendChild(js);
-              }
-              window.onload = init;
-          </script>
-        <div class="small-6 cell">
-          <div class="card-section">
-            <p class="description">Adam (lead singer) was kind enough to perform a solo session for us in the green room. You never really know what your going to get when you try to do a video production behind a stage. The one thing you dont want is for the opening band to start their sound check in the middle of recording. Unfortunately it happened... but like a pro Adam kept it going. We tried to dumb down the background noise as much as possible. Please enjoy!</p>
-          </div>
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="cell medium-12">
+          <a href="https://vimeo.com/225190115" target="_blank">
+            <img id="adam" src="./images/murder-by-death/adam-murder-by-death.jpg" />
+          </a>
         </div>
-        <div class="medium-6 cell">
-          <div class="card-section" id="embed">Loading video...
-          </div>
-        </div>        
       </div>
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="cell medium-12">
+          <p class="description">Adam (lead singer) was kind enough to perform a solo session for us in the green room. You never really know what your going to get when you try to do a video production behind a stage. The one thing you dont want is for the opening band to start their sound check in the middle of recording. Unfortunately it happened... but like a pro Adam kept it going. We tried to dumb down the background noise as much as possible. Please enjoy!</p>
+        </div>
+      </div>    
       <div class="grid-x">
+        <h2>Murder by Death Pictures</h2>
           <div class="orbit small-12 cell" role="region" aria-label="Murder by Death Pictures" data-orbit>
             <div class="orbit-wrapper">
               <div class="orbit-controls">
-               <!--  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button> -->
                 <button class="orbit-previous"><img src="./images/carousel/back-arrow.jpg" /></button>
                 <button class="orbit-next"><img src="./images/carousel/next-arrow.jpg" /></button>
               </div>
@@ -169,8 +151,8 @@
                 </li>
                 <li class="orbit-slide">
                   <figure class="orbit-figure">
-                    <img class="orbit-image" src="./images/murder-by-death/murder-by-death-four.jpg" alt="murder by death group">
-                    <figcaption class="orbit-caption">Hanging Out</figcaption>
+                    <img class="orbit-image" src="./images/murder-by-death/murder-by-death-five.jpg" alt="murder by death group">
+                    <figcaption class="orbit-caption">At the Shore</figcaption>
                   </figure>
                 </li>
                 <li class="orbit-slide">
@@ -181,8 +163,8 @@
                 </li>
                 <li class="orbit-slide">
                   <figure class="orbit-figure">
-                    <img class="orbit-image" src="./images/murder-by-death/murder-by-death-three.jpg" alt="murder by death outdoors">
-                    <figcaption class="orbit-caption">Folk Festival</figcaption>
+                    <img class="orbit-image" src="./images/murder-by-death/murder-by-death-six.jpg" alt="murder by death outdoors">
+                    <figcaption class="orbit-caption">In the Sun</figcaption>
                   </figure>
                 </li>
               </ul>
@@ -195,9 +177,11 @@
             </nav>
           </div>
       </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-    <hr />
-    <div class="grid-x grid-padding-x align-center-middle" id="example-menu">
+    <div class="grid-x grid-padding-x align-center-middle horiz-line" id="example-menu">
       <div class="cell small-6" style="width: 400px;">
         <div class="card-divider">
           <img src="./images/low-roar/low-roar-one.jpg" alt="low roar" />
@@ -226,7 +210,6 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-
     <!-- This is the nested modal -->
     <div class="full reveal" id="exampleModal5" data-reveal>
       <script src="https://w.soundcloud.com/player/api.js"></script>
@@ -520,7 +503,6 @@
               </g>
             </g>
           </svg>
-
           <!-- Audio stuff -->
           <audio id="left-tom-audio" preload="auto">
               <source src="https://tympanus.net/Tutorials/SVGDrums/mp3/Big-Rack-Tom.mp3" type="audio/mp3">
@@ -553,13 +535,8 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <hr />
-
-    <div class="grid-x grid-padding-x align-center text-center">
+    <div class="grid-x align-center text-center horiz-line">
       <div class="cell medium-12">
-        <button class="button" type="button" data-toggle="example-dropdown-bottom-center">Next 5 reviews</button>
-        <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center" data-dropdown data-auto-focus="true">
-        <p>Show me next 5 reviews</p>
       </div>
     </div>
   </div>
